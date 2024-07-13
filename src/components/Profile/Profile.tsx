@@ -35,12 +35,12 @@ const Profile = () => {
                             </div>
                         </div>
                         <div className="md:hidden">
-                            <button onClick={handleFollow} className={`px-4 py-1 ${follow ? "bg-slate-300 text-black" : "bg-[#196AA0]"} text-white border-none rounded-full font-semibold`}>{follow ? "Following" : "Follow"}</button>
+                            <button onClick={handleFollow} className={`px-4 py-1 ${follow ? "bg-gray-600 text-black" : "bg-[#196AA0]"} text-white border-none rounded-full font-semibold`}>{follow ? "Following" : "Follow"}</button>
                         </div>
                     </div>
                 </div>
                 <div className="hidden md:block">
-                    <button onClick={handleFollow} className={`px-4 py-1 ${follow ? "bg-slate-300 text-black" : "bg-[#196AA0]"} text-white border-none rounded-full font-semibold`}>{follow ? "Following" : "Follow"}</button>
+                    <button onClick={handleFollow} className={`px-4 py-1 ${follow ? "bg-gray-600 text-black" : "bg-[#196AA0]"} text-white border-none rounded-full font-semibold`}>{follow ? "Following" : "Follow"}</button>
                 </div>
             </div>
         </div>
