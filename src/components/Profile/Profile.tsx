@@ -5,11 +5,10 @@ const Profile = () => {
     const [follow, setFollow] = useState(false);
     const handleFollow = () => {
         setFollow(!follow);
-        console.log("clicked")
     }
 
     return (
-        <div className="flex gap-2 justify-between py-2">
+        <div className="flex gap-2 justify-between py-4">
             <div className="w-1/4 relative">
                 <div className="absolute bottom-10 sm:bottom-4">
                     <img className="rounded-full w-[240px]" src="assets/Profile.jpg" alt="Profile" />
@@ -35,7 +34,7 @@ const Profile = () => {
                             </div>
                         </div>
                         <div className="md:hidden">
-                            <button onClick={handleFollow} className={`px-4 py-1 ${follow ? "bg-gray-600 text-black" : "bg-[#196AA0]"} text-white border-none rounded-full font-semibold`}>{follow ? "Following" : "Follow"}</button>
+                            <button onClick={handleFollow} className={`px-4 py-1 border-4 border-red-900 ${follow ? "bg-gray-600 text-black" : "bg-[#196AA0]"} text-white border-none rounded-full font-semibold`}>{follow ? "Following" : "Follow"}</button>
                         </div>
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 
 
 const Navbar = () => {
-    const menu: JSX.Element = <>
+    const menu = <>
         <li><a className="btn btn-ghost text-xl"><img className="w-6 md:w-10" src="./assets/Search.png" alt="Search" /></a></li>
         <li><a className="btn btn-ghost text-xl"><img className="w-6 md:w-10" src="./assets/Create.png" alt="Create" /></a></li>
         <li><a className="btn btn-ghost text-xl"><img className="w-6 md:w-10" src="./assets/Message.png" alt="Message" /></a></li>
@@ -11,7 +11,7 @@ const Navbar = () => {
 
     return (
         <div className="bg-[#1F1F1F] text-white">
-            <div className="navbar max-w-screen-xl mx-auto">
+            <div className="navbar max-w-screen-lg mx-auto">
                 <div className="navbar-start">
                     <a className="btn btn-ghost text-xl"><img src="./assets/Logo.png" alt="Logo" /></a>
                 </div>
@@ -34,7 +34,7 @@ const Navbar = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
-                                className="inline-block h-5 w-5 stroke-current">
+                                className="inline-block h-10 w-10 stroke-current">
                                 <path
                                     strokeLinecap="round"
                                     strokeLinejoin="round"
@@ -44,7 +44,7 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            className="dropdown-content bg-base-100 rounded-box z-[1] mt-2 p-2 shadow">
                             {menu}
                         </ul>
                     </div>
