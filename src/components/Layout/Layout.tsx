@@ -7,6 +7,7 @@ import axios from "axios";
 import Post from "../Post/Post";
 import LatestPost from "../LatestPost/LatestPost";
 import AddPost from "../AddPost/AddPost";
+import Footer from "../Footer/Footer";
 
 type Item = {
     id: number;
@@ -58,11 +59,12 @@ const Layout = () => {
                 </div>
                 <div className="py-10">
                     <h2 className="text-center font-bold text-4xl">Latest Posts</h2>
-                        <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                            {posts.map(post => <LatestPost key={post.id} post={post}></LatestPost>)}
-                        </div>
+                    <div className="grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                        {posts.map(post => <LatestPost key={post.id} post={post}></LatestPost>)}
+                    </div>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
