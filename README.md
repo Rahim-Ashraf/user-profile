@@ -1,4 +1,4 @@
-## Website name: Dream Dwellings
+## Website name: User Profile
 ### Video overview: https://drive.google.com/file/d/1NIiHT5c9SVEuhGinyQd3Czv7ZcBbVDuB/view?usp=drive_link
 ### live link: https://simple-user-profile.netlify.app
 
@@ -12,7 +12,7 @@ React, TypeScript, Tailwind
     ```sh
    npm install
     ```
-## Usage
+### Usage
 1. Run the project:
     ```sh
     npm run dev
